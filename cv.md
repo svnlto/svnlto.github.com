@@ -7,14 +7,29 @@ UK
 me@svenlito.com
 079 28732020
 
+## Introduction ##
+
+I have been working in server administration related jobs for many years and
+really enjoyed doing this but I found myself becoming more and more interested in
+web design and web technology moving away from server administration based work to
+more front-end related things as I started working in the web industry.
 
 ## Objective ##
 
-For the past few years I have been working around web technology with e-noise
-and I have had a great a time but i am at a stage in my career where i would
-like to expanding my experience by joining a larger team. In this scenario I'm
-looking for a competitive, engaging, and fast-paced position as a web developer
+For the past few years I have been working around web technology with [E-NOISE](http://e-noise.com/)
+and I have had a great time but I am at a stage in my career where i would
+like to expand my experience by joining a larger team. In this scenario I'm
+looking for a competitive, engaging, and fast-paced position as a front-end developer
 and/or designer in the web based industry.
+
+
+<!-- moving away from server administration
+more interested in front-end
+aiming to become an expert front-end engineer -->
+
+
+I have many years of experience in server administration as a system admin.
+Below you can find a list of my former employers and also a summary of what tasks i have been involved with
 
 ##Experience
 
@@ -23,11 +38,14 @@ and/or designer in the web based industry.
 
 07/2006 - now
 
-* participation in various in-house open source projects
+I have been involved maintaing the E-NOISE hosting platform but slowly got into front-end development using html5 &amp; CSS3 with a
+    special focus on front-end performance optimisation.
+
+* participation in various in-house open source projects, mainly the PHP Framework ([PHPFrame](http://github.com/PHPFrame)) and a CMS called ([Mashine](http://github.com/E-NOISE/Mashine)) which is based on prior Framework
 * planning and running software integration and testing environments
 * planning and integration of in-house intranet service including,
     version control server, backup solution and virtual server environment.
-* Holding workshops on CSS3
+* Using HTML5 and CSS3 in recent Projects.
 * built WordPress and Joomla themes
 * Customer Support Lead
 
@@ -74,14 +92,6 @@ and/or designer in the web based industry.
 * Asset and IP Management through SAP and DHCP
 
 *Software: Win2000/Win2003 Terminal Server / Active Directory, DHCP3, NetInstall, SMS, InstallShield, Remedy, SAP, VBScript*
-
-### Techmar Communications ###
-#### Sap Basis Level Support ####
-04/2002 - 06/2002
-
-* 1st Level support for SAP CO and FI Modules
-
-*Software: SAP, Remedy*
 
 ### United Parcel Service ###
 #### Windows Systems Administrator ####
