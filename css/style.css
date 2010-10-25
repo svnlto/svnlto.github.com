@@ -49,7 +49,7 @@ hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 
 input, select { vertical-align:middle; }
 
 
-body { font:13px/1.231 sans-serif; *font-size:small; } /* hack retained to preserve specificity */
+body { font:13px/1.4 sans-serif sans-serif; *font-size:small; } /* hack retained to preserve specificity */
 
 select, input, textarea, button { font:99% sans-serif; }
 
@@ -128,8 +128,8 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate.
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink. */
-::-moz-selection{ background: #DDD2FF; color:#222; text-shadow: 1px 1px 1px 10px #fff; }
-::selection { background:#DDD2FF; color:#222; text-shadow: none; }
+::-moz-selection{ background: #E8E1FF; color:#222; text-shadow:1px 1px 1px #FFFFFF; }
+::selection { background:#E8E1FF; color:#222; text-shadow:1px 1px 1px #FFFFFF; }
 
 /*  j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #FF5E99; }
@@ -167,6 +167,21 @@ h5 {
 h1, h2, h3, h4, h5 {
     font-family: 'Droid Serif', serif;
 }
+a {
+/*  background-color: #DDD2FF;*/
+  background-color: rgba(211,210,255, 0.8);
+  display: inline-block;
+  padding: 0 2px;
+  color: #222;
+}
+p {
+  margin: 0 0 10px 0;
+}
+article p:first-of-type {
+  font-size: 14px;
+  margin: 10px 0 15px 0;
+ /* background-color: rgba(255, 222, 190, 0.5);*/
+}
 
 #container {
     width: 840px;
@@ -174,7 +189,7 @@ h1, h2, h3, h4, h5 {
 }
 
 section article {
-    border-top: 1px solid #999;
+    border-top: 1px dashed #FFDEBE;
     padding:15px 0 15px 0;
 }
 
