@@ -239,6 +239,17 @@ section article {
   margin:-2px 0 14px;
 }
 
+#education ul {
+  margin-left:0;
+}
+
+#education ul li {
+  display: inline-block;
+  width: 100%;
+}
+.duration {
+  float: right;
+}
 .clear {
     clear:both;
 }
