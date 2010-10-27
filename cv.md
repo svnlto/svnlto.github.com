@@ -1,127 +1,102 @@
-#Sven Lito
+<h1 id="sven_lito">Sven Lito</h1>
 
-508a Kingsland Rd
+<p>508a Kingsland Rd
 E8 4AE
 London
 UK
 me@svenlito.com
-079 28732020
+079 28732020</p>
 
-## Introduction ##
+<h2 id="introduction">Introduction</h2>
 
-I have been working in server administration related jobs for many years and
-really enjoyed doing this but I found myself becoming more and more interested in
-web design and web technology moving away from server administration based work to
-more front-end related things as I started working in the web industry.
+<p>I have been working as a server administrator for several years and I have
+really enjoyed doing this. But I find myself becoming increasingly interested in
+web design and web technology. Having started on the server-end I have slowly
+moved away to front-end related things as I started working for <a href="http://e-noise.com/">E-NOISE</a>. During
+the time at <a href="http://e-noise.com/">E-NOISE</a> I had the opportunity to do a lot of research on topics
+such as HTML5, CSS3 and jQuery.</p>
 
-## Objective ##
+<h2 id="objective">Objective</h2>
 
-For the past few years I have been working around web technology with [E-NOISE](http://e-noise.com/)
-and I have had a great time but I am at a stage in my career where i would
-like to expand my experience by joining a larger team. In this scenario I'm
-looking for a competitive, engaging, and fast-paced position as a front-end developer
-and/or designer in the web based industry.
+<p>After having worked around web technology for a few years I am at a stage in
+my career where I would like to expand my experience by joining a larger team.
+In this scenario I am looking for a competitive, engaging, and fast-paced position
+as a front-end developer and/or designer in the web based industry to become an
+expert front-end engineer.</p>
 
+<h2 id="experience">Experience</h2>
 
-<!-- moving away from server administration
-more interested in front-end
-aiming to become an expert front-end engineer -->
+<h3 id="e_noise_limited">E-NOISE limited</h3>
 
+<h4 id="front_end_developer">Front-end Developer</h4>
 
-I have many years of experience in server administration as a system admin.
-Below you can find a list of my former employers and also a summary of what tasks i have been involved with
+<p>07/2006 - now</p>
 
-##Experience
+<p>I have been involved maintaining the <a href="http://e-noise.com/">E-NOISE</a>
+hosting platform, running customer support and front-end development.</p>
 
-### E-NOISE limited ###
-#### Front-end Developer ####
+<ul>
+<li>participation in various in-house open source projects, mainly the PHP Framework (<a href="http://github.com/PHPFrame">PHPFrame</a>) and a CMS called (<a href="http://github.com/E-NOISE/Mashine">Mashine</a>)</li>
+<li>planning and running software integration and testing environments</li>
+<li>planning and integration of in-house intranet service including,
+version control server, backup solution and virtual server environment.</li>
+<li>Using HTML5 and CSS3 in recent Projects.</li>
+<li>designing and coding pixel-perfect WordPress and Joomla! themes</li>
+<li>Customer Support Lead</li>
+</ul>
 
-07/2006 - now
+<p><em>Software: PHP5, jQuery, Git, SVN, Apache, PHPUnderControl, PHPUnit, ANT, PECL,
+Ubuntu, Debian, GitHub, TextMate, Eclipse</em></p>
 
-I have been involved maintaing the E-NOISE hosting platform but slowly got into front-end development using html5 &amp; CSS3 with a
-    special focus on front-end performance optimisation.
+<p><strong>In the years from 1999 - 2006 I worked as a Systems Administrator in many
+large corporations such as:</strong></p>
 
-* participation in various in-house open source projects, mainly the PHP Framework ([PHPFrame](http://github.com/PHPFrame)) and a CMS called ([Mashine](http://github.com/E-NOISE/Mashine)) which is based on prior Framework
-* planning and running software integration and testing environments
-* planning and integration of in-house intranet service including,
-    version control server, backup solution and virtual server environment.
-* Using HTML5 and CSS3 in recent Projects.
-* built WordPress and Joomla themes
-* Customer Support Lead
+<ul>
+<li>Munich Re Insurance</li>
+<li>Infineon Technologies AG</li>
+<li>United Parcel Service</li>
+<li>BSH-Group</li>
+<li>WWIP Internet Services</li>
+</ul>
 
-*Software: PHP5, jQuery, Git, SVN, Apache, PHPUnderControl, PHPUnit, ANT, PECL, Ubuntu, Debian, GitHub, TextMate, Eclipse*
+<p><strong>Some of my duties were:</strong></p>
 
-### Infineon Technologies AG ###
-#### Systems Administrator ####
+<ul>
+<li>Software distribution using ONCommand NetInstall, Microsoft SMS and InstallShield.</li>
+<li>Asset and IP Management through SAP and DHCP</li>
+<li>Active Directory Migration incl. User and Group Policies</li>
+<li>Maintaining department knowledge-base</li>
+<li>1st point of contact for all Terminal Server, Sun Secure Desktop and Citrix Incidents</li>
+<li>ITIL / Change Management / SLA</li>
+<li>IBM Rational support</li>
+<li>contributing to an OpenSource Project - Linux VServer</li>
+<li>Providing support to users migrating</li>
+</ul>
 
-05/2004 - 10/2006
+<p><em>Software: Win2000/Win2003, Win2000/Win2003 Terminal Server, Citrix, Active Directory,
+SMS, NetInstall, InstallShield, VBScript, Rational, Remedy, SAP, Apache, ProFTPD,
+DHCP3, BIND DNS, Nagios, Monit, Bash, Solaris, RedHat, Debian</em></p>
 
-* User HelpDesk 1st and 2nd Level Support for In-House Windows and *nix Servers
-* 1st point of contact for all Terminal Server, Sun Secure Desktop and Citrix Incidents
-* ITIL / Change Management / SLA
-* IBM Rational support
+<h2 id="education">Education</h2>
 
-*Software: Win2000/Win2003 Terminal Server / Active Directory, Remedy, Rational*
-
-### BSH-Group ###
-#### Windows System Administrator ####
-09/2003 - 04/2004
-
-* Member of 2nd Level Support
-* Active Directory Migration incl. User and Group Policies
-
-*Software: Active Directory*
-
-### WWIP Internet Services ###
-#### Server Technician ####
-02/2003 - 09/2003
-
-* OpenSource Project - Linux VServer
-* Website Maintenance
-* 1st and 2nd Level Customer support
-* In-house backup strategies
-
-*Software: Nagios, Monit, Solaris, Debian, Bash*
-
-### Munich Re Insurance ###
-#### Systems Administrator ####
-06/2002 - 02/2003
-
-* Software distribution using ONCommand NetInstall, Microsoft SMS and InstallShield.
-* Large Scale OS Roll out 20.000+
-* Asset and IP Management through SAP and DHCP
-
-*Software: Win2000/Win2003 Terminal Server / Active Directory, DHCP3, NetInstall, SMS, InstallShield, Remedy, SAP, VBScript*
-
-### United Parcel Service ###
-#### Windows Systems Administrator ####
-03/1999 - 03/2002
-
-* Migration from Windows NT to Windows 2000 - 8.000+ Users
-* Providing support to users migrating
-* Custom Software installation (SMS)
-* Hardware Replacement
-
-*Software: Win2000/Win2003 Server / Active Directory, NetInstall, SMS, VBScript*
-
-## Education ##
-
-Junior Level Linux Professional                                     2005
+<p>Junior Level Linux Professional                                     2005
 Microsoft Certified System Engineer                                 2001
-Advanced Realschule Muehldorf am Inn (Germany)                      1996
+Advanced Realschule Muehldorf am Inn (Germany)                      1996</p>
 
-## Skills ##
+<h2 id="skills">Skills</h2>
 
-Computer Languages: XHTML, HTML5, CSS2.1 & CSS3, JavaScript, jQuery, PHP5, MySQL, VBScript.
-Softwares: Windows, OS X, Solaris, Debian, Bash, ZSH, Microsoft Office, Open Office, Photoshop,
+<p><em>Computer Languages: XHTML, HTML5, Markdown, CSS2.1 &amp; CSS3, JavaScript, jQuery, PHP5, SQL.</em>
+*Softwares: Windows, OS X, Solaris, Debian, Bash, ZSH, Microsoft Office, Open Office, Photoshop,
     Rational, Subversion, Git, Eclipse, TextMate.
+*</p>
 
+<h5 id="links_to_recent_work">Links to recent work:</h5>
 
-
-##### Links to recent work: #####
-
-http://outofme.de
-http://paintuition.com
-http://github.com/svnlto
-https://e-noise.com/portfolio
-https://e-noise.com/beta
+<ul>
+<li>http://demos.e-noise.com/jQuery.fetchTweets/</li>
+<li>http://outofme.de</li>
+<li>http://paintuition.com</li>
+<li>http://github.com/svnlto</li>
+<li>https://e-noise.com/portfolio</li>
+<li>https://e-noise.com/beta</li>
+</ul>
