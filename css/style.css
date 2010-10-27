@@ -76,11 +76,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    display:inline-block;
-    font-size:3.8em;
-    margin:0 0 27px;
-    padding:0 32%;
-    color: #666;
+  color:#666666;
+  display:inline-block;
+  font-size:3.8em;
+  letter-spacing:-0.01em;
+  margin:0 0 27px;
+  padding:0 32%;
 }
 h1:hover:after {
    content: ":";
