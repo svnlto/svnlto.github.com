@@ -152,6 +152,7 @@ article p:first-of-type {
 #container {
     margin:38px auto;
     width:680px;
+    padding: 0 15px;
 }
 
 #hello {
