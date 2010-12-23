@@ -33,84 +33,155 @@ input, select { vertical-align:middle; }
   */
 
 
-body { font:13px/1.231 sans-serif; *font-size:small; }
-
-h1, h2, h3 {
+body {
+  font:14px/1.231 sans-serif;
   font-family: 'Latin Modern Mono Prop';
-  font-style:normal;
+  line-height:140%;
+  text-rendering:optimizelegibility;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Latin Modern Mono Prop';
+  font-style: bold;
   line-height: 140%;
   text-rendering: optimizeLegibility;
+  word-spacing:-0.041em;
 }
 
 h1 {
-  font-size: 54px;
-  margin: 0 0 15px 0;
+  font-size:50px;
+  margin: 0 0 10px 0;
 }
 
 h2 {
-  font-size:46px;
-  margin:0 0 13px;
-  word-spacing:-0.041em;
+  font-size:30px;
+  margin:0 0 10px;
 }
 
 h3 {
-  font-size:40px;
-  margin:0 0 13px;
-  word-spacing:-0.041em;
+  font-size:28px;
+  margin:0 0 10px;
 }
 
+h4 {
+  font-size:24px;
+  margin:0 0 8px;
+}
 
-a { color: #000; }
-a:hover { text-decoration: none; color: {color:Link Hover}; }
-q:before { content: '“'; }
-q:after { content: '”'; }
-strong { font-weight: bold; }
-em { font-style: italic; }
-ul li { list-style-type: none; }
-select, input, textarea, button { font:99% sans-serif; }
-pre, code, kbd, samp { font-family: monospace, sans-serif; }
+h5 {
+  font-size:22px;
+  margin:0 0 10px;
+}
+
+h6 {
+  font-size:18px;
+  margin:0 0 10px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #6A7ED9;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+ul {
+  margin: 0 0 10px 15px;
+}
+
+ul li {
+  list-style-type: disc;
+}
+
+ol {
+  margin:0 0 10px 20px;
+}
+
+ol li {
+
+}
+select, input, textarea, button {
+  font:99% sans-serif;
+}
+
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+  background:none repeat scroll 0 0 rgba(22, 22, 22, 0.5);
+  color:#FFFFFF;
+}
+
+pre {
+  margin: 0 0 10px 0;
+}
+
+blockquote p:before {
+  content:"\201C";
+}
+blockquote p:after {
+  content:"\201D";
+}
+
+blockquote {
+  margin:0 0 0 5px;
+  padding:0 5px 5px 0;
+}
+
+blockquote p {
+  border-left:2px solid #E4E4E4;
+  padding:5px 10px 5px 15px;
+}
 
 #wrapper {
-  margin:0 9px;
-  width:959px;
+  margin:0 10px;
+  width:950px;
 }
 
-#flag {
+nav {
   float:left;
   margin:0 10px 0 0;
   padding:5px 0 0 15px;
   width:214px;
 }
 
-#flag h1 {
-  font-size:54px;
-  font-weight:bold;
-  line-height:64px;
-  margin:10px 0 14px;
+nav h1 {
 }
 
-#flag h1 a {
+nav h1 a {
   text-decoration: none;
 }
-#flag h1 a:hover {
-  color: {
-    color: Link Hover
-  }
-  ;
+nav h1 a:hover {
 }
 
-#flag p {
+nav p {
   margin: 10px 0;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  list-style-type: none;
 }
 
 #content {
   float:left;
-  font-family:'Latin Modern Mono Prop Light';
-  font-style:italic;
-  line-height:140%;
   margin:0 auto;
   padding:93px 0 0;
-  text-rendering:optimizelegibility;
   width:557px;
 }
 
