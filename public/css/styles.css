@@ -28,41 +28,12 @@ table { border-collapse:collapse; border-spacing:0; }
 hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
 input, select { vertical-align:middle; }
 
+/*
+  * Reset end.
+  */
+
 
 body { font:13px/1.231 sans-serif; *font-size:small; }
-select, input, textarea, button { font:99% sans-serif; }
-pre, code, kbd, samp { font-family: monospace, sans-serif; }
-
-
-body {
-  }
-
-  /*body:before{
-      content: " ";
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      border: 1px solid rgba(255, 255, 255, .1);
-      border-bottom: 0;
-      background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .15)), to(rgba(0, 0, 0, .25))), -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, .1)), color-stop(0.501, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0)));
-      background: -moz-linear-gradient(top, rgba(0, 0, 255, .15), rgba(0, 0, 0, .25)), -moz-linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .9) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
-      background: linear-gradient(top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1) 10%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
-      -webkit-background-origin: border-box;
-      -moz-background-origin: border;
-      background-origin: border-box;
-    }*/
-
-
-a { color: #000; }
-a:hover { text-decoration: none; color: {color:Link Hover}; }
-q:before { content: '“'; }
-q:after { content: '”'; }
-strong { font-weight: bold; }
-em { font-style: italic; }
-ul li { list-style-type: none; }
 
 h1, h2, h3 {
   font-family: 'Latin Modern Mono Prop';
@@ -87,6 +58,17 @@ h3 {
   margin:0 0 13px;
   word-spacing:-0.041em;
 }
+
+
+a { color: #000; }
+a:hover { text-decoration: none; color: {color:Link Hover}; }
+q:before { content: '“'; }
+q:after { content: '”'; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+ul li { list-style-type: none; }
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 #wrapper {
   margin:0 9px;
