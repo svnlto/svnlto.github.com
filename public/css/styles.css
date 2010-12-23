@@ -42,34 +42,34 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Latin Modern Mono Prop';
-  font-style: bold;
+  font-weight: bold;
   line-height: 140%;
   text-rendering: optimizeLegibility;
   word-spacing:-0.041em;
 }
 
 h1 {
-  font-size:50px;
+  font-size:48px;
   margin: 0 0 10px 0;
 }
 
 h2 {
-  font-size:30px;
+  font-size:36px;
   margin:0 0 10px;
 }
 
 h3 {
-  font-size:28px;
+  font-size:24px;
   margin:0 0 10px;
 }
 
 h4 {
-  font-size:24px;
+  font-size:18px;
   margin:0 0 8px;
 }
 
 h5 {
-  font-size:22px;
+  font-size:14px;
   margin:0 0 10px;
 }
 
