@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}" />
+<link href="http://kernest.com/fonts/latin-modern-mono-prop-light-oblique.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://kernest.com/fonts/latin-modern-mono-prop.css" media="screen" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../public/css/styles.css">
+</head>
+<body>
+<div id="wrapper">
+  <nav>
+    <h1><a href="/">{Title}</a></h1>
+    <a href="{RSS}">RSS</a><br />
+    <a href="/archive">Archive</a>
+  </nav>
+    <div id="content">
+    {block:Posts}
+      <article class="post">
+
+        {block:Regular}
+          <div class="regular content">
+            {block:Title}<h2>{Title}</h2>{/block:Title}
+                 {Body}
+             <div class="meta">
+               {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
+               {Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
+             </div>
+          </div>
+         {/block:Regular}
+
+         {block:Photo}
+           <div class="photo content">
+               {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
+               {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+               <div class="meta">
+                  {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
+                  {Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
+                </div>
+           </div>
+         {/block:Photo}
+
+         {block:Quote}
+          <div class="quote content">
+            <q class="{Length}">{Quote}</q>
+            {block:Source}<div class="source">&mdash;{Source}</div>{/block:Source}
+              <div class="meta">
+                 {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
+                 {Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
+               </div>
+          </div>
+         {/block:Quote}
+
+         {block:Link}
+         <div class="link content">
+           <h2><a href="{URL}" {Target}>{Name}</a></h2>
+           {block:Description}<div class="caption">{Description}</div>{/block:Description}
+           <div class="meta">
+              {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
+              {Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
+            </div>
+         </div>
+         {/block:Link}
+
+         {block:Conversation}
+         <div class="conversation content">
+           {block:Title}<h2>{Title}</h2>{/block:Title}
+           {block:Lines}{block:Label}<em>{Label}</em>{/block:Label} {Line}<br />{/block:Lines}
+           <div class="meta">
+              {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
+              Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
+            </div>
+         </div>
+         {/block:Conversation}
+
+         {block:Audio}
+         <div class="audio content">
+           {AudioPlayerBlack}
+           <div class="playcount">{FormattedPlayCount} plays</div>
+           {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+           <div class="meta">
+              {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
+              {Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
+            </div>
+         </div>
+         {/block:Audio}
+
+         {block:Video}
+         <div class="video content">
+           {Video-700}
+           {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+            <div class="meta">
+               {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
+               {Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
+             </div>
+         </div>
+         {/block:Video}
+
+    </article> <!-- .post -->
+    {/block:Posts}
+    </div><!-- #content -->
+
+  <footer>
+    {block:Pagination}
+      <div class="pagers">
+        {block:PreviousPage}
+        <a href="{PreviousPage}">&#171; Previous</a>&nbsp;&nbsp;
+        {/block:PreviousPage}
+          <span>{CurrentPage} of {TotalPages}</span>
+        {block:NextPage}
+            &nbsp;&nbsp;<a href="{NextPage}">Next &#187;</a>&nbsp;&nbsp;&nbsp;
+        {/block:NextPage}
+      </div>
+    {/block:Pagination}
+  </footer>
+</div><!-- #wrapper -->
+
+</body>
+</html>
