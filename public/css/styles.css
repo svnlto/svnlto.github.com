@@ -222,9 +222,6 @@ nav {
   width:214px;
 }
 
-nav h1 {
-}
-
 nav h1 a {
   text-decoration: none;
 }
@@ -246,73 +243,68 @@ nav ul li {
   width:557px;
 }
 
-#content .post {
+#content article {
   margin-bottom: 60px;
   position: relative;
 }
 
-#content .post h2 {
-  font-weight: bold;
-  margin-bottom: 3px;
-}
-
-#content .normal {
+article .normal {
   margin-bottom: 1em;
 }
 
-#content .normal li {
+.normal li {
   list-style-type: disc;
   list-style-position: inside;
 }
 
-#content .quote q {
+.quote q {
   font-style: italic;
 }
-#content .source {
+
+article .source {
   margin-top: 4px;
 }
-#content .conversation em {
+
+.conversation em {
   padding-right: 0.25em;
 }
-#content .audio .caption, #content .photo .caption,
-#content .video .caption {
+
+article .audio .caption, article .photo .caption,
+article .video .caption {
   padding-top: 6px;
 }
 
-#content .audio .playcount {
+article .audio .playcount {
   color: #ccc;
   margin-top: 3px;
 }
-#content .post blockquote {
+
+article blockquote {
   border-left: 3px solid #000;
   padding: 0px 15px;
   margin: 5px 10px 15px 10px;
 }
 
-#content .post p {
-  margin-bottom: 1em;
-}
-
-#content .post .meta {
+article .meta {
   color:#999999;
   font-size:0.9em;
 }
 
-#content .meta a {
+.meta a {
   color:#999999;
 }
 
-#content .meta .date {
+article .meta .date {
   margin-bottom: 5px;
   color: #ccc;
 }
 
-#content .permalink a {
+.permalink a {
   text-decoration: none;
   color: #ccc;
 }
 
-#content .permalink a:hover {
+.permalink a:hover {
   color: #666;
 }
 
