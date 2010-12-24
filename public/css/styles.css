@@ -94,6 +94,22 @@ a:hover {
   color: #6A7ED9;
 }
 
+a:link {
+  -webkit-tap-highlight-color: #FF5E99;
+}
+
+::-moz-selection{
+  background: #776DD9;
+  color:#fff;
+  text-shadow: none;
+}
+
+::selection {
+  background:#776DD9;
+  color:#fff;
+  text-shadow: none;
+}
+
 strong {
   font-weight: bold;
 }
@@ -117,6 +133,11 @@ ol {
 ol li {
 
 }
+
+nav ul, nav li {
+  margin: 0;
+}
+
 select, input, textarea, button {
   font:99% sans-serif;
 }
@@ -129,15 +150,10 @@ pre, code, kbd, samp {
 
 pre {
   margin: 0 0 10px 0;
-  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
   white-space: pre; /* CSS2 */
   white-space: pre-wrap; /* CSS 2.1 */
   white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
   word-wrap: break-word; /* IE */
-}
-
-nav ul, nav li {
-  margin: 0;
 }
 
 small {
@@ -196,18 +212,9 @@ input:invalid, textarea:invalid {
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid { background-color: #D0ACF0; }
 
-::-moz-selection{ background: #776DD9; color:#fff; text-shadow: none; }
-::selection { background:#776DD9; color:#fff; text-shadow: none; }
-
-/*  j.mp/webkit-tap-highlight-color */
-a:link { -webkit-tap-highlight-color: #FF5E99; }
-
 /* make buttons play nice in IE:
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {  width: auto; overflow: visible; }
-
-/* bicubic resizing for non-native sized IMG:
-   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
 #wrapper {
@@ -218,8 +225,8 @@ button {  width: auto; overflow: visible; }
 nav {
   float:left;
   margin:0 10px 0 0;
-  padding:5px 0 0 15px;
-  width:214px;
+  padding:5px 0 0 7px;
+  width:224px;
 }
 
 nav h1 a {
@@ -239,13 +246,8 @@ nav ul li {
 #content {
   float:left;
   margin:0 auto;
-  padding:93px 0 0;
-  width:557px;
-}
-
-#content article {
-  margin-bottom: 60px;
-  position: relative;
+  padding:88px 0 0;
+  width:560px;
 }
 
 article .normal {
@@ -259,6 +261,19 @@ article .normal {
 
 .quote q {
   font-style: italic;
+}
+
+.portfolio-item {
+
+}
+
+.portfolio-item img {
+  background-color:rgba(0, 0, 0, 0.5);
+  border:1px solid rgba(0, 0, 0, 0.4);
+  display:inline-block;
+  height:400px;
+  margin:0 0 10px;
+  width:100%;
 }
 
 article .source {
