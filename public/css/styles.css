@@ -37,9 +37,8 @@ html {
 }
 
 body {
-  font:14px/1.231 sans-serif;
-  font-family: 'Latin Modern Mono Prop';
-  line-height:140%;
+  background:url("../img/a-fucking-triangle.png") no-repeat scroll -555px 0 #fff;
+  font:14px/140% 'Latin Modern Mono Prop';
   text-rendering:optimizelegibility;
 }
 
@@ -175,7 +174,6 @@ blockquote p:after {
 }
 
 blockquote {
-  margin:0 0 0 5px;
   padding:0 5px 5px 0;
 }
 
@@ -184,42 +182,52 @@ blockquote p {
   padding:5px 10px 5px 15px;
 }
 
-textarea { overflow: auto; } /* thnx ivannikolic! www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+textarea {
+  overflow: auto;
+}
 
-.ie6 legend, .ie7 legend { margin-left: -7px; } /* thnx ivannikolic! */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
 
-/* align checkboxes, radios, text inputs with their label
-   by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css ; */
-input[type="radio"] { vertical-align: text-bottom; }
-input[type="checkbox"] { vertical-align: bottom; }
-.ie7 input[type="checkbox"] { vertical-align: baseline; }
-.ie6 input { vertical-align: text-bottom; }
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
 
-/* hand cursor on clickable input elements */
-label, input[type=button], input[type=submit], button { cursor: pointer; }
+label, input[type=button],
+input[type=submit],
+button {
+  cursor: pointer;
+}
 
-/* webkit browsers add a 2px margin outside the chrome of form elements */
-button, input, select, textarea { margin: 0; }
+button, input, select, textarea {
+  margin: 0;
+}
 
-/* colors for form validity */
-input:valid, textarea:valid   {  }
+
+input:valid, textarea:valid {}
 input:invalid, textarea:invalid {
       border-radius: 1px;
     -moz-box-shadow: 0px 0px 5px #DA241D;
  -webkit-box-shadow: 0px 0px 5px #DA241D;
          box-shadow: 0px 0px 5px #DA241D;
 }
-.no-boxshadow input:invalid,
-.no-boxshadow textarea:invalid { background-color: #D0ACF0; }
 
-/* make buttons play nice in IE:
-   www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
-button {  width: auto; overflow: visible; }
-.ie7 img { -ms-interpolation-mode: bicubic; }
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+  background-color: #D0ACF0;
+}
 
 #wrapper {
   margin:0 10px;
   width:950px;
+}
+
+.index .active,
+.blog .active,
+.portfolio .active {
+  color: #6A7ED9;
+  text-decoration: none;
 }
 
 nav {
@@ -250,24 +258,28 @@ nav ul li {
   width:560px;
 }
 
-article .normal {
+#content article {
+  margin:0 0 45px;
+}
+
+#content article .normal {
   margin-bottom: 1em;
 }
 
-.normal li {
+#content article .normal li {
   list-style-type: disc;
   list-style-position: inside;
 }
 
-.quote q {
+#content article .quote q {
   font-style: italic;
 }
 
-.portfolio-item {
+#content article .portfolio-item {
 
 }
 
-.portfolio-item img {
+#content article .portfolio-item img {
   background-color:rgba(0, 0, 0, 0.5);
   border:1px solid rgba(0, 0, 0, 0.4);
   display:inline-block;
@@ -276,50 +288,55 @@ article .normal {
   width:100%;
 }
 
-article .source {
+#content article .source {
   margin-top: 4px;
 }
 
-.conversation em {
+#content article .conversation em {
   padding-right: 0.25em;
 }
 
-article .audio .caption, article .photo .caption,
-article .video .caption {
+#content article .audio .caption,
+#content article .photo .caption,
+#content article .video .caption {
   padding-top: 6px;
 }
 
-article .audio .playcount {
+#content article .audio .playcount {
   color: #ccc;
   margin-top: 3px;
 }
 
-article blockquote {
-  border-left: 3px solid #000;
-  padding: 0px 15px;
-  margin: 5px 10px 15px 10px;
-}
-
-article .meta {
+#content article .meta {
   color:#999999;
   font-size:0.9em;
 }
 
-.meta a {
-  color:#999999;
+#content article .meta .reblogged {
+  text-align: left;
 }
 
-article .meta .date {
+#content article .meta .note-count {
+  text-align: right;
+}
+
+#content article .meta .time {
+  display: inline-block;
+  text-align: right;
   margin-bottom: 5px;
   color: #ccc;
 }
 
-.permalink a {
+#content article .meta a {
+  color:#999999;
+}
+
+#content article .permalink a {
   text-decoration: none;
   color: #ccc;
 }
 
-.permalink a:hover {
+#content article .permalink a:hover {
   color: #666;
 }
 
@@ -336,7 +353,7 @@ footer a {
 }
 
 footer a:hover {
-  color: { color: Link Hover };
+  color:;
 }
 
 footer .pagers {
@@ -350,4 +367,28 @@ footer .pagers span {
 
 footer .pagers a {
   font-weight: bold;
+}
+
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+/* make buttons play nice in IE:
+   www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {
+  width: auto; overflow: visible;
+}
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+.ie6 legend,
+.ie7 legend {
+  margin-left: -7px;
 }
