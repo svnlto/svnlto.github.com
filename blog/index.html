@@ -29,36 +29,39 @@
       <article>
 
         {block:Regular}
-          <div class="regular content">
-            {block:Title}<h2>{Title}</h2>{/block:Title}
-                 {Body}
-             <div class="meta">
-               {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
-               {Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
-             </div>
-          </div>
+        <div class="regular content">
+          {block:Title}<h2>{Title}</h2>{/block:Title}
+               {Body}
+           <div class="meta">
+             {block:RebloggedFrom}<p class="reblogged"><a href="{ReblogParentURL}">{ReblogParentTitle}</a></span>{/block:RebloggedFrom}
+             {block:NoteCount}<a class="note-count" href="{Permalink}#notes">{NoteCount}</a>{/block:NoteCount}
+             {block:Date}<p class="time"><a href="{Permalink}" title="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {24HourWithZero}:{Minutes}:{Seconds} +0100">{TimeAgo}</a></p>{/block:Date}
+           </div>
+        </div>
          {/block:Regular}
 
          {block:Photo}
-           <div class="photo content">
-               {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
-               {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-               <div class="meta">
-                  {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
-                  {Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
-                </div>
+         <div class="photo content">
+           {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
+           {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+           <div class="meta">
+             {block:RebloggedFrom}<p class="reblogged"><a href="{ReblogParentURL}">{ReblogParentTitle}</a></span>{/block:RebloggedFrom}
+              {block:NoteCount}<a class="note-count" href="{Permalink}#notes">{NoteCount}</a>{/block:NoteCount}
+              {block:Date}<p class="time"><a href="{Permalink}" title="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {24HourWithZero}:{Minutes}:{Seconds} +0100">{TimeAgo}</a></p>{/block:Date}
            </div>
+         </div>
          {/block:Photo}
 
          {block:Quote}
-          <div class="quote content">
-            <q class="{Length}">{Quote}</q>
-            {block:Source}<div class="source">&mdash;{Source}</div>{/block:Source}
-              <div class="meta">
-                 {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
-                 {Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
-               </div>
-          </div>
+         <div class="quote content">
+           <blockquote class="{Length}"><p>{Quote}</p></blockquote>
+           {block:Source}<div class="source">&mdash;{Source}</div>{/block:Source}
+           <div class="meta">
+             {block:RebloggedFrom}<p class="reblogged"><a href="{ReblogParentURL}">{ReblogParentTitle}</a></span>{/block:RebloggedFrom}
+              {block:NoteCount}<a class="note-count" href="{Permalink}#notes">{NoteCount}</a>{/block:NoteCount}
+              {block:Date}<p class="time"><a href="{Permalink}" title="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {24HourWithZero}:{Minutes}:{Seconds} +0100">{TimeAgo}</a></p>{/block:Date}
+           </div>
+         </div>
          {/block:Quote}
 
          {block:Link}
@@ -66,9 +69,10 @@
            <h2><a href="{URL}" {Target}>{Name}</a></h2>
            {block:Description}<div class="caption">{Description}</div>{/block:Description}
            <div class="meta">
-              {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
-              {Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
-            </div>
+             {block:RebloggedFrom}<p class="reblogged"><a href="{ReblogParentURL}">{ReblogParentTitle}</a></span>{/block:RebloggedFrom}
+              {block:NoteCount}<a class="note-count" href="{Permalink}#notes">{NoteCount}</a>{/block:NoteCount}
+              {block:Date}<p class="time"><a href="{Permalink}" title="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {24HourWithZero}:{Minutes}:{Seconds} +0100">{TimeAgo}</a></p>{/block:Date}
+           </div>
          </div>
          {/block:Link}
 
@@ -77,9 +81,10 @@
            {block:Title}<h2>{Title}</h2>{/block:Title}
            {block:Lines}{block:Label}<em>{Label}</em>{/block:Label} {Line}<br />{/block:Lines}
            <div class="meta">
-              {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
-              Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
-            </div>
+             {block:RebloggedFrom}<p class="reblogged"><a href="{ReblogParentURL}">{ReblogParentTitle}</a></span>{/block:RebloggedFrom}
+              {block:NoteCount}<a class="note-count" href="{Permalink}#notes">{NoteCount}</a>{/block:NoteCount}
+              {block:Date}<p class="time"><a href="{Permalink}" title="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {24HourWithZero}:{Minutes}:{Seconds} +0100">{TimeAgo}</a></p>{/block:Date}
+           </div>
          </div>
          {/block:Conversation}
 
@@ -89,9 +94,10 @@
            <div class="playcount">{FormattedPlayCount} plays</div>
            {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
            <div class="meta">
-              {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
-              {Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
-            </div>
+             {block:RebloggedFrom}<p class="reblogged"><a href="{ReblogParentURL}">{ReblogParentTitle}</a></span>{/block:RebloggedFrom}
+              {block:NoteCount}<a class="note-count" href="{Permalink}#notes">{NoteCount}</a>{/block:NoteCount}
+              {block:Date}<p class="time"><a href="{Permalink}" title="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {24HourWithZero}:{Minutes}:{Seconds} +0100">{TimeAgo}</a></p>{/block:Date}
+           </div>
          </div>
          {/block:Audio}
 
@@ -100,9 +106,10 @@
            {Video-700}
            {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
             <div class="meta">
-               {TimeAgo} on {Month} {DayOfMonth}{DayOfMonthSuffix},
-               {Year} at {12Hour}:{Minutes} {AmPm} | <a href="{Permalink}" class="permalink">Permalink</a>
-             </div>
+              {block:RebloggedFrom}<p class="reblogged"><a href="{ReblogParentURL}">{ReblogParentTitle}</a></span>{/block:RebloggedFrom}
+               {block:NoteCount}<a class="note-count" href="{Permalink}#notes">{NoteCount}</a>{/block:NoteCount}
+               {block:Date}<p class="time"><a href="{Permalink}" title="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {24HourWithZero}:{Minutes}:{Seconds} +0100">{TimeAgo}</a></p>{/block:Date}
+            </div>
          </div>
          {/block:Video}
 
