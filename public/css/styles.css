@@ -37,7 +37,8 @@ html {
 }
 
 body {
-  background:url("../img/a-fucking-triangle.png") no-repeat scroll -555px 0 #fff;
+  background:url("../img/a-fucking-triangle.png") no-repeat fixed -555px 0;
+  background-color: #fff;
   font:14px/140% 'Latin Modern Mono Prop';
   text-rendering:optimizelegibility;
 }
