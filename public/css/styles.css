@@ -32,6 +32,17 @@ input, select { vertical-align:middle; }
   * global reset end.
   */
 
+@font-face {
+  font-family: 'LatinModernMonoPropLight10Reg';
+  src: url('../font/lmmonoproplt10-regular-webfont.eot');
+  src: local('☺'),
+    url('../font/lmmonoproplt10-regular-webfont.svg#webfontB2GgOlaW') format('svg'),
+    url('../font/lmmonoproplt10-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 html {
   overflow-y: scroll;
 }
@@ -39,12 +50,12 @@ html {
 body {
   /*background:url("../img/a-fucking-triangle.png") no-repeat fixed -555px 0;*/
   background-color: #fff;
-  font:14px/140% 'Latin Modern Mono Prop';
+  font:14px/140% 'LatinModernMonoPropLight10Reg';
   text-rendering:optimizelegibility;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Latin Modern Mono Prop';
+  font-family: 'LatinModernMonoPropLight10Reg';
   font-weight: bold;
   line-height: 140%;
   text-rendering: optimizeLegibility;
