@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  background:url("../img/a-fucking-triangle.png") no-repeat fixed -555px 0;
+  /*background:url("../img/a-fucking-triangle.png") no-repeat fixed -555px 0;*/
   background-color: #fff;
   font:14px/140% 'Latin Modern Mono Prop';
   text-rendering:optimizelegibility;
@@ -222,6 +222,7 @@ input:invalid, textarea:invalid {
 #wrapper {
   margin:0 10px;
   width:950px;
+  z-index: 999999;
 }
 
 .index .active,
@@ -370,6 +371,14 @@ footer .pagers a {
   font-weight: bold;
 }
 
+#bg {
+  left:0;
+  position:absolute;
+  top:0;
+  width:100%;
+  height: 100%;
+  z-index:-999999;
+}
 
 .ie6 input {
   vertical-align: text-bottom;
