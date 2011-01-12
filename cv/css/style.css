@@ -234,19 +234,19 @@ section article {
   margin:8px 0 0;
 }
 
-#education {
+.education {
   margin:0 0 -1px;
 }
 
-#education h2 {
+.education h2 {
   margin:-2px 0 14px;
 }
 
-#education ul {
+.education ul {
   margin-left:0;
 }
 
-#education ul li {
+.education ul li {
   display: inline-block;
   width: 100%;
 }
