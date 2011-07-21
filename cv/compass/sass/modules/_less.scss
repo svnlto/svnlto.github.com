@@ -28,7 +28,9 @@
     width: 320px;
     padding: 48px 34px 60px;
   }
-
+header #hello h1 {
+  margin:  18px 0 0 28%;
+}
 #container, header #hello {
   width: 320px;
 }
@@ -44,7 +46,9 @@
 //  px      68    160    252    344    436
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-
+  header #hello h1 {
+    margin:  18px 0 0 28%;
+  }
   body {
     width: 480px;
     //padding: 36px 22px 48px;
