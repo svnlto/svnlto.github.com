@@ -1,362 +1,434 @@
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display:block;
+audio[controls], canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
 
-nav ul { list-style:none; }
-
-blockquote, q { quotes:none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after { content:''; content:none; }
-
-a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
-
-ins { background-color:#ff9; color:#000; text-decoration:none; }
-
-mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
-
-del { text-decoration: line-through; }
-
-abbr[title], dfn[title] { cursor:help; }
-
-/* tables still need cellspacing="0" in the markup */
-table { border-collapse:collapse; border-spacing:0; }
-
-hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
-
-input, select { vertical-align:middle; }
-
-
-body { font:13px/1.4 sans-serif sans-serif; *font-size:small; } /* hack retained to preserve specificity */
-
-select, input, textarea, button { font:99% sans-serif; }
-
-pre, code, kbd, samp { font-family: monospace, sans-serif; }
-
-/* reset end */
-
-/* always force a scrollbar in non-IE */
-html { overflow-y: scroll; }
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
 body {
-    background-color: rgba(170,156,110, 0.1);
-    font-family: monospace, sans-serif;
-    color: #222;
-    background: url("../img/grid.png") repeat scroll 0 0 transparent;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Droid Serif', serif;
-    text-rendering: optimizeLegibility;
-    font-weight: bold;
-    color: #444;
-    font-weight: lighter;
-    font-size: 2em;
+body, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 20px;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* Improve readability of pre-formatted text in all browsers */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+/* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 20px;
+}
+
+dd {
+  margin: 0 0 0 20px;
+}
+
+nav ul, nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Improve image quality when scaled in IE7
+ * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label {
+  cursor: pointer;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+}
+
+input[type="search"] {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Remove default vertical scrollbar in IE6/7/8/9 */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* Colors for form validity */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: monospace, sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: .06em;
+  color: #222222;
+  padding: 0 48px 84px;
+  margin: 0 auto;
+  background-color: rgba(170, 156, 110, 0.1);
+  background: url("../img/grid.png") repeat scroll 0 0 transparent;
+  /* Stops Mobile Safari from auto-adjusting font-sizes */
+  -webkit-text-size-adjust: 100%;
+}
+body ::-moz-selection {
+  background: #e8e1ff;
+  color: #222222;
+  text-shadow: none;
+}
+body ::selection {
+  background: #e8e1ff;
+  color: #222222;
+  text-shadow: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Droid Serif', serif;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+  color: #444;
+  font-weight: lighter;
+  font-size: 2em;
 }
 
 h1 {
-  color:#666666;
-  display:inline-block;
-  font-size:3.8em;
-  letter-spacing:-0.01em;
-  margin:0 0 27px;
-  padding:0 32%;
-}
-h1:hover:after {
-   content: ":";
-   color: #999;
+  font-size: 36px;
 }
 
 h2 {
-    font-size:28px;
-    margin:0 0 18px;
+  font-size: 24px;
+  margin: 0 0 21px;
 }
+
 h3 {
-    font-size: 20px;
-    margin: 0 0 12px 0;
+  font-size: 21px;
+  margin: 0 0 20px 0;
 }
+
 h4 {
-    font-size: 18px;
-    margin: 0 0 11px 0;
+  font-size: 18px;
+  margin: 0 0 18px 0;
 }
+
 h5 {
-    font-size:16px;
-    margin:16px 0 9px;
+  font-size: 16px;
+  margin: 16px 0 12px;
 }
+
 h6 {
-  font-size:14px;
-  letter-spacing:-0.006em;
-  margin:0 0 9px;
+  font-size: 14px;
+  letter-spacing: -0.006em;
+  margin: 8px 0 0 0;
 }
 
 a {
   background-color: #FFFCC9;
-  background-color:rgba(255, 235, 40, 0.1);
+  background-color: rgba(255, 235, 40, 0.1);
   display: inline-block;
   padding: 0 2px;
-  color: #222;
+  color: #222222;
 }
-
 a:hover {
   background-color: #FFFCC9;
-  background-color:rgba(255, 235, 40, 0.2);
+  background-color: rgba(255, 235, 40, 0.2);
   display: inline-block;
   padding: 0 2px;
-  color: #222;
 }
-
-a:hover, a:active { outline: none; }
-
-a, a:active, a:visited { color: #222; }
-
+a:hover, a a:active {
+  outline: none;
+}
 
 p {
   margin: 0 0 10px 0;
+  text-align: justify;
 }
 
 ul, ol {
-  display:inline-block;
-  line-height:1.37em;
-  margin:7px 0 10px 21px;
-}
-
-small { font-size: 85%; }
-strong, th { font-weight: bold; }
-
-article p:first-of-type {
-  font-size:1.03em;
-  margin:19px 0 19px;
-}
-
-#container {
-    margin:38px auto;
-    width:680px;
-    padding: 0 15px;
-}
-
-#hello {
-  background-color: #FFFCC9;
-  background-color:rgba(255, 235, 40, 0.1);
-  height:49px;
-  position:absolute;
-  top:49px;
-  width:100%;
-  z-index:-99;
+  display: inline-block;
+  line-height: 1.37em;
 }
 
 header {
-    border-bottom:1px dashed #FFDEBE;
-    height:164px;
+  border-bottom: 1px dashed #FFDEBE;
+  height: 165px;
+  zoom: 1;
 }
-
+header:before, header:after {
+  content: "";
+  display: table;
+}
+header:after {
+  clear: both;
+}
 header a {
   background: none;
 }
-
-.address {
-  float:left;
-}
-
-.additional-info {
-  float:right;
-  position:relative;
-}
-#main {
-  margin:47px 0 0;
-}
-
-.statement {
-  border-top:medium none;
-  padding:0 0 38px;
-}
-#experience h2 {
-
-}
-section article {
-    border-top:1px dashed #FFDEBE;
-    padding:20px 0;
-}
-
-#experience article h3 {
-  display:inline-block;
-  margin:0 0 9px;
-  width:568px;
-}
-
-#experience article .company-name {
-  color:#999999;
-  text-transform:uppercase;
-}
-
-#experience article .duration {
-  bottom:4px;
-  color:#999999;
-  position:relative;
-}
-
-.jobdetail {
-  margin:0 0 2px;
-}
-
-#additional-jobdetail {
-  margin:1px 0 0;
-  padding:20px 0 0;
-}
-
-#additional-jobdetail h6 {
-  margin:0 0 11px;
-}
-
-#additional-jobdetail em {
-  display:inline-block;
-  margin:8px 0 0;
-}
-
-.education {
-  margin:0 0 -1px;
-}
-
-.education h2 {
-  margin:-2px 0 14px;
-}
-
-.education ul {
-  margin-left:0;
-}
-
-.education ul li {
+header #hello {
+  background-color: #FFFCC9;
+  background-color: rgba(255, 235, 40, 0.1);
   display: inline-block;
-  width: 100%;
+  margin: 0 0 37px 0;
+  height: 53px;
+  width: 712px;
+  z-index: -99;
 }
-
-.duration {
+header #hello h1 {
+  color: #666;
+  letter-spacing: -0.01em;
+  margin: 18px 0 0 38%;
+}
+header #hello h1:hover:after {
+  content: ":";
+  color: #999;
+}
+header .address {
+  float: left;
+}
+header .additional-info {
   float: right;
 }
 
-.clear {
-    clear:both;
+#container {
+  margin: 38px auto;
+  width: 720px;
 }
 
-::-moz-selection{ background: #E8E1FF; color:#222; text-shadow:1px 1px 1px #FFFFFF; }
-::selection { background:#E8E1FF; color:#222; text-shadow:1px 1px 1px #FFFFFF; }
-
-/*
- * print styles
- */
-@media print {
-  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
-
-  a, a:visited { color: #444 !important; text-decoration: underline; }
-
-  a:after { content: " (" attr(href) ")"; }
-
-  abbr:after { content: " (" attr(title) ")"; }
-
-  .ir a:after { content: ""; }
-
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-
-  thead { display: table-header-group; }
-
-  tr, img { page-break-inside: avoid; }
-
-  @page { margin: 0.5cm; }
-
-  p, h2, h3 { orphans: 3; widows: 3; }
-
-  h2, h3{ page-break-after: avoid; }
-
-  header {
-    border: none;
-  }
-
+#statement {
+  border-top: medium none;
+  padding: 0 0 20px;
+}
+#statement #introduction {
+  display: inline-block;
+  margin: 13px 0 22px 0;
 }
 
-
-
-/*
- * Media queries for responsive design
- */
-
-@media all and (orientation:portrait) {
-  /* Style adjustments for portrait mode goes here */
-
+#main {
+  margin: 30px 0 0 0;
 }
 
-@media all and (orientation:landscape) {
-  /* Style adjustments for landscape mode goes here */
-
+article {
+  border-top: 1px dashed #FFDEBE;
+  padding: 20px 0;
+}
+article p:first-of-type {
+  font-size: 1.03em;
+  margin: 19px 0 19px;
+}
+article .duration {
+  font-family: monospace, sans-serif;
+  color: #999;
+  font-size: 14px;
+  float: right;
+}
+article .company-name {
+  color: #999999;
+  text-transform: uppercase;
+}
+article.job {
+  padding: 40px 0 20px 0;
+}
+article.job .recent {
+  margin: 20px 0 12px;
+}
+article.job ul {
+  margin: 0 0 .5em 0;
+}
+article#education {
+  margin: 0 0 -1px;
+}
+article#education h2 {
+  margin: -2px 0 14px;
+}
+article#education ul {
+  margin-left: 0;
+}
+article#education .edu-detail {
+  display: inline-block;
+  width: 690px;
 }
 
-/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)
-   Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) {
+#additional-jobdetail {
+  padding: 20px 0 0;
+}
+#additional-jobdetail em {
+  display: inline-block;
+  margin: 8px 0 0;
+}
 
-  html {
-    -webkit-text-size-adjust:none;
-    -ms-text-size-adjust:none;
-    float: none;
-    font-size: 80%;
-    background: #fff;
-    color: #222;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body, #container, #hello {
+    width: 712px;
+    padding: 48px 28px 60px;
   }
-
-  body {
-    float:left;
+}
+@media only screen and (max-width: 767px) {
+  body, #container, #hello {
+    width: 252px;
+    padding: 48px 34px 60px;
   }
-
-  h1 {
-    font-size: 2.5em;
-    width: 200px;
-    position: relative;
-    left:-10px;
-  }
-
-  .address, .additional-info {
-    font-size: 0.85em;
-    margin: 40px 0 0 0;
-  }
-
-  #container {
-    padding:10px;
-    width: 300px;
-  }
-
-  h1 {
-    margin:0;
-  }
-
-  #experience article h3 {
-    width: 200px;
-  }
-
-  #experience article .duration  {
-    float:left;
-  }
-
-  .duration {
-    float: left;
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body, #container, #hello {
+    width: 436px;
   }
 }
