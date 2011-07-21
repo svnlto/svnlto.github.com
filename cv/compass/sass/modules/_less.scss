@@ -8,7 +8,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-  body, #container, #hello {
+  body {
     width: 712px;
     padding: 48px 28px 60px;
   }
@@ -24,10 +24,14 @@
 
 @media only screen and (max-width: 767px) {
 
-  body, #container, #hello {
-    width: 252px;
+  body {
+    width: 320px;
     padding: 48px 34px 60px;
   }
+
+#container, header #hello {
+  width: 320px;
+}
 
 }
 
@@ -41,9 +45,9 @@
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-  body, #container, #hello {
-    width: 436px;
-    // padding: 36px 22px 48px;
+  body {
+    width: 480px;
+    //padding: 36px 22px 48px;
   }
 
 }
