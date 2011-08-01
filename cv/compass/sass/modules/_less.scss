@@ -10,7 +10,7 @@
 
   body {
     width: 712px;
-    padding: 48px 28px 60px;
+    padding: 0 28px 60px;
   }
 }
 
@@ -26,14 +26,28 @@
 
   body {
     width: 320px;
-    padding: 48px 34px 60px;
+    padding: 0 34px 60px;
   }
-header #hello h1 {
-  margin:  18px 0 0 28%;
-}
-#container, header #hello {
-  width: 320px;
-}
+
+  header #hello h1 {
+    margin:  18px 0 0 28%;
+  }
+
+  #container, header #hello {
+    width: 320px;
+  }
+
+  article#education {
+    .edu-detail {
+      width: auto
+    }
+  }
+
+  article {
+    .duration {
+      float: none
+    }
+  }
 
 }
 
@@ -46,12 +60,26 @@ header #hello h1 {
 //  px      68    160    252    344    436
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
   header #hello h1 {
     margin:  18px 0 0 28%;
   }
+
   body {
     width: 480px;
-    //padding: 36px 22px 48px;
+    padding: 0 22px 48px;
+  }
+
+  article#education {
+    .edu-detail {
+      width: auto
+    }
+  }
+
+  article {
+    .duration {
+      float: none
+    }
   }
 
 }
