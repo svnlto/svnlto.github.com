@@ -27,7 +27,8 @@ body {
   margin: 0 auto;
 
   background-color: rgba(170,156,110, 0.1);
-  background: url("../img/grid.png") repeat scroll 0 0 transparent;
+  background: inline-image("../img/grid.png");
+  background-color: #fff;
 
   /* Stops Mobile Safari from auto-adjusting font-sizes */
   -webkit-text-size-adjust: 100%;

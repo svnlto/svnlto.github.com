@@ -227,7 +227,8 @@ body {
   padding: 0 48px 84px;
   margin: 0 auto;
   background-color: rgba(170, 156, 110, 0.1);
-  background: url("../img/grid.png") repeat scroll 0 0 transparent;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAHUlEQVR42s3JIQEAAADCMMK8+nuSAI+YWtSFy2QpJmdglE0+qtMAAAAASUVORK5CYII=');
+  background-color: #fff;
   /* Stops Mobile Safari from auto-adjusting font-sizes */
   -webkit-text-size-adjust: 100%;
 }
