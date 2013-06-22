@@ -1,3 +1,3 @@
 # svnlto.github.com
 
-nothing special, just my cv/resumè.
+my cv/resumè.
