@@ -1,15 +1,11 @@
 {
   "name": "svnlto.github.com",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "resume",
-  "dependencies": {},
-  "private": true,
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-less": "~0.7.0",
-    "grunt-contrib-watch": "~0.5.1",
-    "grunt-recess": "~0.3.4"
+  "dependencies": {
+    "harp": "~0.11.2"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/svnlto/svnlto.github.com.git"
